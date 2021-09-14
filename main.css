@@ -1,21 +1,29 @@
 body {
-    font-family: "Courier New", Courier, monospace;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  textarea {
-    width: 100vw;
-    height: 49vh;
-    font-size:3rem;
-    text-align: center;
-    padding: 25vh;
-    font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+textarea {
+  width: 100vw;
+  height: 49vh;
+  font-size: 3rem;
+  text-align: center;
+  padding: 25vh;
+  font-weight: bold;
 
-    border: none;
-    overflow: auto;
-    outline: none;
-    resize: none;
+  border: none;
+  overflow: auto;
+  outline: none;
+  resize: none;
+}
+
+@media (max-width: 1200px) {
+  textarea {
+    padding: 20vh 10vw;
+    height: 59vh;
+    font-size: 36px;
   }
+}
