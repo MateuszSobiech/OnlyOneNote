@@ -7,3 +7,14 @@ area.addEventListener('keyup', function (event) {
     }
   }
 });
+
+area.addEventListener('input', () => {
+  localStorage.setItem('note', area.value.trim());
+});
+
+const load = () => {
+  const note = localStorage.getItem('note');
+  area.value = note;
+};
+
+load();
